@@ -8,7 +8,44 @@ import { print } from './js/lib.js';
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
+const dog = {
+   species: 'dog',
+  name: 'Toby',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'woof-woof!'
+};
+const cat = {
+   species: 'cat',
+  name: 'Margo',
+  gender: 'female',
+  legs: 4,
+  hands: 0,
+  saying: 'maw'
+};
+const male ={
+   species: 'male',
+  name: 'Denis',
+  gender: 'male',
+  legs: 2,
+  hands: 2,
+  saying: 'Hello World!'
+};
+const female = {
+   species: 'female',
+  name: 'Daria',
+  gender: 'female',
+  legs: 2,
+  hands: 2,
+  saying: 'Where is my money?'
+};
 
+let arr = [dog,cat,male,female];
+
+arr.forEach(item => {
+   print(`${item.species}: ${item.name}, ${item.gender}, ${item.legs}, ${item.hands}, ${item.saying}.`);
+})
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
